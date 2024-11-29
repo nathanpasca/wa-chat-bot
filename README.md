@@ -39,7 +39,7 @@ API_KEY=your_gemini_api_key_here
 node index.js
 ```
 
-2. Scan the QR code with WhatsApp Web to authenticate
+2. Scan the QR code with WhatsApp to authenticate
 
 3. The bot is now ready to receive and respond to messages
 
