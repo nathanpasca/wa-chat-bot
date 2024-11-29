@@ -51,4 +51,4 @@ This project was developed as part of an academic assignment in Machine Learning
 
 - [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js)
 - [Google Gemini AI](https://ai.google.dev/)
-- Course instructors and teaching staff for guidance
+- Course instructors Mr. R for guidance
