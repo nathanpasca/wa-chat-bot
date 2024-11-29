@@ -5,10 +5,12 @@ import qrcode from "qrcode-terminal"
 
 dotenv.config()
 
+//Declare the API key, model, and client
 const genAI = new GoogleGenerativeAI(process.env.API_KEY)
 const model = genAI.getGenerativeModel({ model: "gemini-pro" })
 const client = new Client()
 
+// Design the model of AI by creating a function that contains object with context
 const createContext = () => ({
   tentang: `
     Role: Sinta - Universitas Negeri Jakarta Customer Service AI Helper
@@ -31,10 +33,11 @@ const createContext = () => ({
   `,
 })
 
+// Make a function that create a prompt based on the context
 const createPrompt = (question) => {
   const context = createContext()
   return `
-    ${context.tetang}
+    ${context.tentang}
 
     ${context.responseFormat}
 
